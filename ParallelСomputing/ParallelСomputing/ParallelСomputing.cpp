@@ -2,8 +2,8 @@
 #include <thread>
 #include <vector>
 #include <chrono>
-#include <Windows.h>
-#include <iomanip>
+//#include <Windows.h>
+//#include <iomanip>
 
 
 int SumVectors(std::vector<int> vector1, std::vector<int> vector2, int sum) {
