@@ -20,6 +20,22 @@ int main() {
 	int sum = 0;
 	
 	std::cout << std::endl;
+	
+	for (const auto& i : size) {
+		if (i == size.at(0)) {
+			std::cout << "\t\t" << i << "\t\t";
+		}
+		else if (i == size.at(1)) {
+			std::cout << i << ("\t\t");
+		}
+		else {
+			std::cout << i << ("\t\t");
+		}
+
+	}
+	
+
+	std::cout << std::endl;
 
 	for (const auto& count : streams) {
 		std::cout << count << " потоков\t";
@@ -57,6 +73,9 @@ int main() {
 			for (auto& value : Threads) {
 				value.join();
 			}
+			auto end = std::chrono::steady_clock::now();
+			std::chrono::duration<double> elapsed_seconds = end - begin;
+			std::cout << elapsed_seconds.count() << "s " << "\t";
 		}
 		std::cout << std::endl;
 	}
