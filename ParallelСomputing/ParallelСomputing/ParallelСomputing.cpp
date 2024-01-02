@@ -25,13 +25,9 @@ int main() {
 		if (i == size.at(0)) {
 			std::cout << "\t\t" << i << "\t\t";
 		}
-		else if (i == size.at(1)) {
-			std::cout << i << ("\t\t");
-		}
 		else {
 			std::cout << i << ("\t\t");
 		}
-
 	}
 	
 
